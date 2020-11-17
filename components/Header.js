@@ -34,7 +34,7 @@ const Header = ({ number }) => {
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', }}>
             <View >
               <Image
-                style={styles.tinyLogo}
+                style={styles.icon}
                 source={{
                   uri:
                     'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/800px-Arrow-down.svg.png',
@@ -49,13 +49,8 @@ const Header = ({ number }) => {
         <TouchableOpacity style={{ width: width, height: height, borderColor: 'gray', borderStyle: 'solid', borderRightWidth: 0.6 }}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', }}>
             <View >
-              <Image
-                style={styles.tinyLogo}
-                source={{
-                  uri:
-                    'https://spng.pngfind.com/pngs/s/50-503917_arrow-symbols-line-art-arrow-up-arrow-down.png',
-                }}
-              />
+            <Image style={styles.icon} source={require('../images/up-and-down.png')} />
+
             </View>
             <View >
               <Text style={styles.text}>الأقل سعرا</Text>
@@ -66,7 +61,7 @@ const Header = ({ number }) => {
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', }}>
             <View >
               <Image
-                style={styles.tinyLogo}
+                style={styles.icon}
                 source={{
                   uri:
                     'https://e7.pngegg.com/pngimages/366/232/png-clipart-computer-icons-icon-design-filter-miscellaneous-angle.png',
@@ -97,11 +92,7 @@ const styles = StyleSheet.create({
     padding: 20,
     margin: 10,
   },
-  tinyLogo: {
-    width: 50,
-    height: 50,
-  },
-  tinyLogo: {
+  icon: {
     width: 20,
     height: 20,
   },
